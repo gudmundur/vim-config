@@ -90,7 +90,8 @@ if has("gui_running")
    "color peaksea
    color sorcerer
    if has("gui_macvim") 
-       set gfn=Menlo\ Regular:h11.00
+       set gfn=Consolas:h13
+       "set gfn=Menlo\ Regular:h11.00
        "set lines=47
        "set columns=100
        color sorcerer " also nice: ir_black
@@ -266,3 +267,10 @@ function! GuiTabLabel()
     return label
 endfunction
 set guitablabel=%{GuiTabLabel()}
+
+
+
+""Gúnda stöff
+autocmd FileType python set ft=python.django " For SnipMate
+autocmd FileType html set ft=htmldjango.html " For SnipMate
+
