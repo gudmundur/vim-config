@@ -88,12 +88,12 @@ if has("gui_running")
    "color wombat
    "color mustang
    "color peaksea
-   color sorcerer
+   color molokai
    if has("gui_macvim") 
-       set gfn=Menlo\ Regular:h11.00
+       set gfn=Consolas:h13.00
        "set lines=47
        "set columns=100
-       color sorcerer " also nice: ir_black
+       color molokai " also nice: ir_black
         " Slaufa-f til að vekja find (ala slaufa-T í textmate)
         " opt-slaufa-f sama nema í nýjum tab
         " path uppf. til að leita recursive í cwd
@@ -186,6 +186,7 @@ au BufNewFile,BufRead  svn-commit.* setf svn
 au BufNewFile,BufRead  *.cs set syn=html
 au BufNewFile,BufRead  *.g  set syn=antlr3
 au BufNewFile,BufRead   *.tmpl set enc=utf8
+au BufNewFile,BufRead  *.gradle setf groovy
 
 " Haskell
 au Bufenter *.hs compiler ghc
