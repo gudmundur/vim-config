@@ -91,6 +91,7 @@ if has("gui_running")
    color molokai
    if has("gui_macvim") 
        set gfn=Consolas:h13.00
+       set guioptions-=T
        "set lines=47
        "set columns=100
        color molokai " also nice: ir_black
