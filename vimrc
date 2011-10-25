@@ -167,7 +167,7 @@ function! VisualSearch(direction) range
 endfunction
 
 " Settings for Command-T
-set wildignore+=*.o,*.obj,.git,*.pyc,*.log,*.aux,*.out,*.bbl,*.blg
+set wildignore+=*.o,*.obj,.git,*.pyc,*.log,*.aux,*.out,*.bbl,*.blg,node_modules
 noremap <leader>j :CommandT<CR>
 
 " Settings for indent-guides
