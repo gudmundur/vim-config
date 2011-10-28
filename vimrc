@@ -88,13 +88,13 @@ if has("gui_running")
    "color wombat
    "color mustang
    "color peaksea
-   color sorcerer
+   color molokai
    if has("gui_macvim") 
-       set gfn=Consolas:h13
-       "set gfn=Menlo\ Regular:h11.00
+       set gfn=Consolas:h13.00
+       set guioptions-=T
        "set lines=47
        "set columns=100
-       color sorcerer " also nice: ir_black
+       color molokai " also nice: ir_black
         " Slaufa-f til að vekja find (ala slaufa-T í textmate)
         " opt-slaufa-f sama nema í nýjum tab
         " path uppf. til að leita recursive í cwd
@@ -167,7 +167,7 @@ function! VisualSearch(direction) range
 endfunction
 
 " Settings for Command-T
-set wildignore+=*.o,*.obj,.git,*.pyc
+set wildignore+=*.o,*.obj,.git,*.pyc,*.log,*.aux,*.out,*.bbl,*.blg,node_modules
 noremap <leader>j :CommandT<CR>
 
 " Settings for indent-guides
@@ -187,6 +187,7 @@ au BufNewFile,BufRead  svn-commit.* setf svn
 au BufNewFile,BufRead  *.cs set syn=html
 au BufNewFile,BufRead  *.g  set syn=antlr3
 au BufNewFile,BufRead   *.tmpl set enc=utf8
+au BufNewFile,BufRead  *.gradle setf groovy
 
 " Haskell
 au Bufenter *.hs compiler ghc
