@@ -184,7 +184,6 @@ let g:LatexBox_latexmk_options = '-pvc'
 
 " Various file-type specifics
 au BufNewFile,BufRead  svn-commit.* setf svn
-au BufNewFile,BufRead  *.cs set syn=html
 au BufNewFile,BufRead  *.g  set syn=antlr3
 au BufNewFile,BufRead   *.tmpl set enc=utf8
 au BufNewFile,BufRead  *.gradle setf groovy
@@ -207,6 +206,9 @@ augroup markdown
     au! BufRead,BufNewFile *.markdown   setfiletype mkd
     autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:>
 augroup END
+
+" CSharp
+au BufNewFile,BufRead *.cs set ft=csharp
 
 " Handy function to search previous lines for indent levels and
 " use those instead of multiples of shiftwidth

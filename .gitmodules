@@ -52,3 +52,9 @@
 [submodule "bundle/vim-jade"]
 	path = bundle/vim-jade
 	url = git://github.com/digitaltoad/vim-jade.git
+[submodule "bundle/csharp"]
+	path = bundle/csharp
+	url = https://github.com/vim-scripts/csharp.vim.git
+[submodule "bundle/mustache"]
+	path = bundle/mustache
+	url = https://github.com/juvenn/mustache.vim.git
