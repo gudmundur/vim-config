@@ -270,3 +270,10 @@ function! GuiTabLabel()
     return label
 endfunction
 set guitablabel=%{GuiTabLabel()}
+
+
+
+""Gúnda stöff
+autocmd FileType python set ft=python.django " For SnipMate
+autocmd FileType html set ft=htmldjango.html " For SnipMate
+
