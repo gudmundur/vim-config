@@ -70,3 +70,9 @@
 [submodule "bundle/showmarks"]
 	path = bundle/showmarks
 	url = https://github.com/garbas/vim-showmarks.git
+[submodule "vim-indent-object"]
+	path = vim-indent-object
+	url = https://github.com/michaeljsmith/vim-indent-object.git
+[submodule "bundle/vim-indent-object"]
+	path = bundle/vim-indent-object
+	url = https://github.com/michaeljsmith/vim-indent-object.git
